@@ -1,0 +1,43 @@
+html{
+	color:blue;
+}
+a{
+	color:white;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+.header{
+	text-align: center;
+}
+.section{
+	text-align: center;
+	margin-top: 150px;
+	/*background: lightblue;*/
+	width:50%;
+	position:relative;
+	left:25%;
+}
+.section h3{
+	background:rgb(30, 30, 30);
+	height:30px;
+}
+.form{
+	position:relative;
+	left: 30%;
+	top:200px;
+	width:30%;
+	background:rgb(30, 70, 70);
+	padding:30px;
+}
+.form input{
+	margin-bottom: 20px;
+	height:30px;
+}
+#classes,#students{
+	padding:20px;
+	background:blue;
+	position: relative;
+	top:250px;left:30%;
+}
