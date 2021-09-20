@@ -12,10 +12,10 @@
 	$password=$_POST['password'];
 	$confirmpassword=$_POST['confirmpassword'];
 	$connect=mysqli_connect("localhost","root","","freelance_school_attendance");
-	$query="insert into stu (name,password,confirm_password) values('$username','$password','$confirmpassword')";
+	$query="insert into teachers(name,password,confirm_password) values('$username','$password','$confirmpassword')";
 	$i=mysqli_query($connect,$query);
 	if($i==1)
-	header("location:login.html");
+	header("location:login.php");
 	mysqli_close($connect);
 	?>
 </body>

@@ -1,9 +1,9 @@
 html{
-	color:blue;
+	color:rgb(30, 30, 30);
 }
 a{
-	color:white;
 	text-decoration: none;
+	color:black;
 }
 a:hover{
 	text-decoration: underline;
@@ -13,8 +13,7 @@ a:hover{
 }
 .section{
 	text-align: center;
-	margin-top: 150px;
-	/*background: lightblue;*/
+	margin-top: 150px;	
 	width:50%;
 	position:relative;
 	left:25%;
@@ -35,9 +34,41 @@ a:hover{
 	margin-bottom: 20px;
 	height:30px;
 }
-#classes,#students{
-	padding:20px;
-	background:blue;
+.menu{
+	display:inline-block;
+}
+.main{
 	position: relative;
-	top:250px;left:30%;
+	padding: 50px;
+}
+.menu{
+	width:30%;
+}
+.menu h3{
+	background-color: blue;
+	color:black;
+	width: fit-content;
+	height:30px;
+	padding:20px;
+}
+.menu-items{
+	display: none;
+}
+.menu:hover .menu-items{
+	display:block;
+}
+#menu1{
+	float:left;
+}
+#menu2{
+	float:right;
+}
+a{
+	text-decoration: none;
+}
+.students_list{
+	padding: 30px;
+}
+.data_table{
+	padding: 0px 200px;
 }

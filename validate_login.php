@@ -17,11 +17,12 @@
 	$num=mysqli_num_rows($result);
 	if($num==1){
 		$row=mysqli_fetch_array($result);
-		echo $row['name'];
-		header("location:last.php");
+		$_SESSION['teacher_name'] = $row['name'];
+		$_SESSION['teacher_id'] = $row['id'];
+		header("location:index.php");
 	}
 	else
-	header("location:login.html");
+	header("location:login.php");
 	mysqli_close($connect);
 	?>
 </body>
